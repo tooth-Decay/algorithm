@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * @Description TODO 滑动窗口最大值
  * 注意队列中的 内容是下标 ,但是比较的时候是nums[i] 和 nums[队列中存储的下标] 比较
  */
-public class Demo {
+public class 滑动窗口最大值 {
     public static void main(String[] args) {
         int[] demo = {7, 2, 4};
         int k = 2;
