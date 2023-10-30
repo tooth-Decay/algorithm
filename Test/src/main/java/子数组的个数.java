@@ -9,7 +9,8 @@ import java.util.LinkedList;
 // 内for循环和 l 其实不相关了 , r会来到第一个不满足的下标,此时 l - r 之间的所有数经历一次判断,l也会变成r,所以会有覆盖
 public class 子数组的个数 {
     public static void main(String[] args) {
-        System.out.println(subArrays(new int[]{4, 5, 1}, 2));
+        int[] arr = {4, 5, 1, 4, 5, 2, 5, 6, 7, 1};
+        System.out.println(subArrays(arr, 2));
     }
 
     public static int subArrays(int[] arr, int number) {
@@ -36,4 +37,20 @@ public class 子数组的个数 {
         }
         return count;
     }
+
+//    //暴力求解 写不出
+//    public static int subArrays2(int[] arr, int number) {
+//        int count = 0;
+//        for (int l = 0; l < arr.length; l++) {
+//            for (int r = l; r < arr.length; r++) {
+//                int max = arr[r], min = arr[r];
+//                for (int i = l; i <= r; i++) {
+//                    if (arr[i] >= max) max = arr[i];
+//                    if (min >= arr[i]) min = arr[i];
+//                    if (max - min <= number) count++;
+//                }
+//            }
+//        }
+//        return count;
+//    }
 }
