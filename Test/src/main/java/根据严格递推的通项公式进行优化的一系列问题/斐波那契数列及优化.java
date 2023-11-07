@@ -1,3 +1,5 @@
+package 根据严格递推的通项公式进行优化的一系列问题;
+
 /**
  * @Author: tooth-Decay
  * @Date: 2023/11/1 16:59
@@ -5,9 +7,18 @@
  */
 public class 斐波那契数列及优化 {
     public static void main(String[] args) {
-        System.out.println(fb(40));
-        System.out.println(fbDP(40));
-        System.out.println(fbMatrix(40));
+//        long l1 = System.currentTimeMillis();
+//        System.out.println(fb(49));
+//        long l2 = System.currentTimeMillis();
+//        System.out.println("耗时 :" + (l2-l1));
+//        long l3 = System.currentTimeMillis();
+//        System.out.println(fbDP(2));
+//        long l4 = System.currentTimeMillis();
+//        System.out.println("耗时 :" + (l4-l3));
+        long l5 = System.currentTimeMillis();
+        System.out.println(fbMatrix(1));
+        long l6 = System.currentTimeMillis();
+        System.out.println("耗时 :" + (l6 - l5));
 
     }
 
@@ -17,6 +28,7 @@ public class 斐波那契数列及优化 {
     }
 
     public static int fbDP(int n) {
+        if (n == 1) return 1;
         int[] ans = new int[n + 1];
         ans[1] = 1;
         ans[2] = 1;
@@ -27,6 +39,7 @@ public class 斐波那契数列及优化 {
     }
 
     public static int fbMatrix(int n) {
+        if (n == 1) return 1;
         int[][] base = new int[][]{{1, 1}}; //
         /*
          *   | 1  1 |
