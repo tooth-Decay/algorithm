@@ -1,10 +1,12 @@
+package Die;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
  * @Author: tooth-Decay
  * @Date: 2023/10/27 16:51
- * @Description TODO 滑动窗口最大值
+ * @Description TODO Die.滑动窗口最大值
  * 注意队列中的 内容是下标 ,但是比较的时候是nums[i] 和 nums[队列中存储的下标] 比较
  */
 public class 滑动窗口最大值 {

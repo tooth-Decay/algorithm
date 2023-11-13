@@ -1,6 +1,4 @@
-package KMP算法及其应用;
-
-import java.util.Arrays;
+package Die.KMP算法及其应用;
 
 /**
  * @Author: tooth-Decay

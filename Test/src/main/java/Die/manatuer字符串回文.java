@@ -1,3 +1,5 @@
+package Die;
+
 import java.util.Arrays;
 
 /**

@@ -1,4 +1,4 @@
-package KMP算法及其应用;
+package Die.KMP算法及其应用;
 
 import java.util.Arrays;
 

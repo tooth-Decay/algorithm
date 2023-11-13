@@ -1,4 +1,4 @@
-package 根据严格递推的通项公式进行优化的一系列问题;
+package Die.根据严格递推的通项公式进行优化的一系列问题;
 
 /**
  * @Author: tooth-Decay

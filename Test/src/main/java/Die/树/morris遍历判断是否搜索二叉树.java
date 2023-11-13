@@ -1,4 +1,4 @@
-package 树;
+package Die.树;
 
 /**
  * @Author: tooth-Decay

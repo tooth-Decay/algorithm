@@ -1,3 +1,5 @@
+package Die;
+
 /**
  * @Author: tooth-Decay
  * @Date: 2023/10/29 5:33
